@@ -13,59 +13,72 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
+        android:layout_margin="40dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
         >
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="486dp"
             android:layout_gravity="center_horizontal"
-            android:padding="24dp"
-            android:background="@drawable/custom_edited_text">
+            android:background="@drawable/custom_edited_text"
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <TextView
+                android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:id="@+id/loginText"
-                android:textSize="36sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/lavender"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/username"
-                android:background="@drawable/custom_edited_text"
-                android:layout_marginTop="60dp"
-                android:padding="8dp"
-                android:hint="Username"
-                android:drawableRight="@drawable/baseline_person_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:textColor="@color/lavender"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/password"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/custom_edited_text"
+                android:drawableRight="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_marginTop="30dp"
+                android:background="@drawable/custom_edited_text"
+                android:drawableRight="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:padding="8dp"
-                android:hint="Password"
-                android:drawableRight="@drawable/baseline_lock_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:textColor="@color/black" />
+
             <Button
+                android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Login"
-                android:id="@+id/loginButton"
-                android:textSize="18sp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="50dp"
                 android:backgroundTint="@color/lavender"
+                android:text="Login"
+                android:textSize="20sp"
+                app:cornerRadius="20dp"></Button>
+
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/lavender"
+                android:text="Signup"
+                android:textSize="20sp"
                 app:cornerRadius="20dp"></Button>
 
 
